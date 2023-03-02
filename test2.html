@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+<!-- <body onload="ani_string('target')"> -->
+    <!-- <pre id="poke">오늘 점심은 포케를 먹어야겠다.</pre>
+    <script>
+        function ani_string(id){
+            const el = document.getElementById(id);
+        } -->
+    <!-- </script> -->
+    <pre id="poke">오늘 점심은 포케를 먹어야겠다.</pre>
+    <script>
+        const el = document.querySelector("#poke");
+        console.log(el.childNodes[0].data);  
+        let textNode=el.childNodes[0];  //childNodes 자식 요소들을 가져옴
+        let txt = textNode.data;   //자식 요소들의 텍스트 배열
+
+        setInterval (function(){
+            txt=txt[txt.length-1] /*공백*/ + txt.substring(0, txt.length-1);
+            textNode.data=txt;
+        },100);
+
+    </script>
+</body>
+</html>

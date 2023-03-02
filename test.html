@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 1. 문제
+        // let daylist = ["일"+"월"+"화"+"수"+"목"+"금"+"토"]
+        // const a = new Date();
+        // let y = a.getFullYear();
+        // let m = a.getMonth()+1;
+        // let d = a.getDate();
+        // let i = a.getDay();
+
+        // let h = a.getHours();
+        // let hour = (hour>=12)?"오후":"오전";
+        // hour = (hour>=12)? hour-12 : hour;
+        // let mm = a.getMinutes();
+        // let s = a.getSeconds();
+
+
+        // m = (m<10)? '0'+m :m;
+        // d = (d<10)? '0'+d:d;
+        // document.getElementById("yy").innerHTML=`${y}년 ${m}월 ${d}일 ${daylist[i]}요일`;
+        // document.getElementById("mm").innerHTML=`${hour}시 ${mm}분 ${s}초 `;
+        
+        
+        
+        // 3.문제
+        // document.write(`${y}-${m}-${d}`);
+        //4.문제
+        let one = 5;
+        let two = 6;
+        let three = 7;
+
+        let s = (one+two+three)/2;
+
+        let result = Math.sqrt(s*(s-one)*(s-two)*(s-three));
+        document.write(result);
+        
+    </script>
+
+    <!-- 2. 문제
+    <button type ="버튼" onclick="window.print()" id="print" class="print">인쇄하기</button> -->
+</body>
+</html>
